@@ -1,0 +1,36 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+
+
+* {
+    font-family: 'Poppins', sans-serif;//прописали шрифт
+    margin: 0;//по умолчанию внешние отступы 0
+    padding: 0;//по умолчанию внутренние отступы 0
+    }
+
+.container {
+    width: 1140px;//ширина контейнера из макета 1140рх
+    margin: 0 auto;//отцентровали контейнер по середине экрана
+    
+}
+
+.devider {
+    width: 60px;
+    height: 3px;
+    background: $main_color;
+    margin: 0 auto;
+}
+    
+@import 'blocks/promo';
+@import 'blocks/buttons';
+@import 'blocks/title';
+@import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/descr';
+@import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/skills';

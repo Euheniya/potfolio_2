@@ -1,0 +1,43 @@
+.sidepanel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    &__links {
+        display: flex;
+        flex-direction: column;
+        height: 90px;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: flex;
+        width: 20px;
+        height: 20px;
+        &:hover {
+            path {
+                fill: $main_color;
+            }
+            a {
+                color: $main_color;
+            }
+        }
+    }
+    &__devider {
+        position: absolute;
+        height: 70px;
+        width: 2px;
+        background: #000;
+        top: 105px;
+        left: 59px;
+    }
+
+    &__descr {
+        position: absolute;
+        transform: rotate(-90deg);
+        top: 245px;
+        left: -15px;
+        width: 150px;
+    }
+
+}

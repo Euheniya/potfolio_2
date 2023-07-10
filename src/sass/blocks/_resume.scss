@@ -1,0 +1,87 @@
+.resume {
+    padding-top: 120px;
+    &__subtitle {
+        
+       text-align: center;
+        }
+    &__devider {
+        margin-top: 25px;
+        margin: 0 auto;
+        }   
+    &__wrapper {
+        padding: 60px 90px 0 72px;
+        display: grid;
+        grid-template-columns: repeat(2, 415px);
+        column-gap: 145px;
+        
+    }
+    &__title {
+        position: relative;
+        padding: 0 0 45px 40px;
+        @include before_circle ;
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 10px;
+            
+        }
+    }
+    
+    &__item {
+        padding-left: 43px;
+        margin-bottom: 45px;
+        &_head {
+            position: relative;
+            display: grid;
+            grid-template-columns: 36px 320px;
+            column-gap: 20px;
+            margin-bottom: 12px;
+            &:after {
+                position: relative;
+                content: '';
+                z-index: 3;
+                width: 44px;
+                height: 1px;
+                background: #000;
+                top: -30px;
+                left: -45px;
+        }
+        }
+        &_icons {
+            position: relative;
+            height: 25px;
+            @include before_circle ;
+            left: 10px;
+            img {
+                position: relative;
+                left: 6px;
+                top: 10px;
+            }
+        }
+    }
+    &__list {
+        margin-bottom: 0px;
+    }
+    
+    
+}
+    h2 {
+        text-align: center;
+    }
+    ul {
+       
+        list-style: none;
+        
+        
+    }
+
+    li {
+        position: relative;
+        @include before_line;
+        &:before {
+            top: -50px;
+            left: -3px;
+        }
+    }
+
+    
