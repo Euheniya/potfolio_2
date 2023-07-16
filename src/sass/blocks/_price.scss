@@ -1,0 +1,32 @@
+.price {
+    padding-top: 120px;
+    &__devider {
+        margin-top: 25px;
+    }
+    &__wrapper {
+        margin: 60px 50px;
+        display: grid;
+        grid-template: repeat(3, 45px) / repeat(2, 370px);
+        grid-auto-rows: 45px;
+        gap: 15px;
+        justify-content: space-between;
+
+    }
+    &__head {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__item {
+        padding-left: 25px;
+        position: relative;
+        @include before_circle ;
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 3px;
+            left: 0;
+            
+        }
+    }
+}
